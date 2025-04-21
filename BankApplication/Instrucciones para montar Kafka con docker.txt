@@ -1,0 +1,4 @@
+1. Tener instalado Docker
+2. Abrir la consola del sistema, navegar hasta directorio donde se encuentra el archivo docker-compose.yml
+3. Ejecutar el siguiente comando:  docker-compose up -d
+4. Después de iniciado Kafka, ejecutar los servicios client y account
