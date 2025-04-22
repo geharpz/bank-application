@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "67c2493c-20ad-4e1d-adc3-86795856040f",
+		"_postman_id": "9cd392b1-b08f-4e11-a210-f76d5f110fce",
 		"name": "collection_bank_postman",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "16594906"
@@ -31,7 +31,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8000/api/transactions/clients/7/report?dateTransactionStart=2025-04-01&dateTransactionEnd=2025-04-30",
+					"raw": "http://localhost:8000/api/transactions/clients/2/report?dateTransactionStart=2025-04-01&dateTransactionEnd=2025-04-30&correlationId=1f514e57-2547-4c4e-8c60-934dd7cce62c",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -41,7 +41,7 @@
 						"api",
 						"transactions",
 						"clients",
-						"7",
+						"2",
 						"report"
 					],
 					"query": [
@@ -52,6 +52,10 @@
 						{
 							"key": "dateTransactionEnd",
 							"value": "2025-04-30"
+						},
+						{
+							"key": "correlationId",
+							"value": "1f514e57-2547-4c4e-8c60-934dd7cce62c"
 						}
 					]
 				}
@@ -82,7 +86,7 @@
 						"value": "insomnia/2023.5.8"
 					}
 				],
-				"url": "http://localhost:8000/api/transactions/account/1"
+				"url": "http://localhost:8000/api/transactions/account/2"
 			},
 			"response": []
 		},
@@ -172,7 +176,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"type\": \"DEPOSIT\",\n  \"amount\": 2000.00,\n  \"accountId\": 1\n}",
+					"raw": "{\n  \"type\": \"WITHDRAWAL\",\n  \"amount\": 100.00,\n  \"accountId\": 3\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -286,14 +290,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"isActive\":false\n}",
+					"raw": "{\n  \"active\":true\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://localhost:8000/api/accounts"
+				"url": "http://localhost:8000/api/accounts/1"
 			},
 			"response": []
 		},
@@ -321,7 +325,7 @@
 						"value": "insomnia/2023.5.8"
 					}
 				],
-				"url": "http://localhost:8000/api/accounts/number/MA00001"
+				"url": "http://localhost:8000/api/accounts/number/3021045600000002"
 			},
 			"response": []
 		},
@@ -411,7 +415,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"type\": \"SAVINGS\",\n  \"initialAmount\": 1000.00,\n  \"clientId\":1\n}",
+					"raw": "{\n  \"type\": \"SAVINGS\",\n  \"initialAmount\": 2000.00,\n  \"clientId\":2,\n\t\"active\":true\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -484,7 +488,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"address\": \"Calle verdadera\",\n  \"phone\": \"987654355\"\n}",
+					"raw": "{\n  \"address\": \"Calle verdadera 2\",\n  \"phone\": \"987654357\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -525,7 +529,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"isActive\":false\n}",
+					"raw": "{\n \"active\":true\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -560,7 +564,7 @@
 						"value": "insomnia/2023.5.8"
 					}
 				],
-				"url": "http://localhost:8001/api/clients/dni/AAA00001"
+				"url": "http://localhost:8001/api/clients/dni/87654345"
 			},
 			"response": []
 		},
@@ -650,7 +654,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"name\": \"Cesar Primera\",\n  \"dni\": \"87654333\",\n  \"gender\": \"M\",\n  \"age\": 35,\n  \"address\": \"Av. Real 123\",\n  \"phone\": \"987654322\",\n  \"password\": \"securePass2024\"\n}",
+					"raw": "{\n  \"name\": \"Cesar segunda\",\n  \"dni\": \"87654345\",\n  \"gender\": \"M\",\n  \"age\": 35,\n  \"address\": \"Avenida real\",\n  \"phone\": \"987654323\",\n  \"password\": \"securePass2024\",\n\t\"active\":true\n}",
 					"options": {
 						"raw": {
 							"language": "json"

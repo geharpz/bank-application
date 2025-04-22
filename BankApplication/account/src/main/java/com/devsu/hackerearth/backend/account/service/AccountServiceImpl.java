@@ -96,7 +96,7 @@ public class AccountServiceImpl implements AccountService {
         Account account = accountRepository.findById(accountDto.getId())
                 .orElseThrow(() -> new AccountNotFoundException(accountDto.getId()));
 
-        if (!Boolean.TRUE.equals(accountDto.isActive())) {
+        if (!Boolean.TRUE.equals(account.isActive())) {
             throw new AccountInactiveException(accountDto.getId());
         }
 
@@ -112,10 +112,6 @@ public class AccountServiceImpl implements AccountService {
     public AccountDto partialUpdate(Long id, PartialAccountDto partialAccountDto) {
         Account account = accountRepository.findById(id)
                 .orElseThrow(() -> new AccountNotFoundException(id));
-
-        if (!Boolean.TRUE.equals(partialAccountDto.isActive())) {
-            throw new AccountInactiveException(id);
-        }
 
         try {
             account.setActive(partialAccountDto.isActive());

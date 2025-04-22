@@ -13,7 +13,7 @@ public class ErrorResponse {
 
         protected ResponseEntity<ApiErrorResponse> buildErrorResponse(HttpStatus status, Exception ex,
                         HttpServletRequest request) {
-                String code = (ex instanceof BusinessException) ? code = ((BusinessException) ex).getCode()
+                String code = (ex instanceof BusinessException) ? ((BusinessException) ex).getCode()
                                 : "GENERIC_ERROR";
                 String message = (ex instanceof BusinessException)
                                 ? ex.getMessage()

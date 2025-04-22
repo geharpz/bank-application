@@ -116,10 +116,6 @@ public class ClientServiceImpl implements ClientService {
 		Client client = clientRepository.findById(id)
 				.orElseThrow(() -> new ClientNotFoundException(id));
 
-		if (!Boolean.TRUE.equals(client.isActive())) {
-			throw new ClientInactiveException(id);
-		}
-
 		try {
 			client.setActive(partialClientDto.isActive());
 			return clientMapper.toDto(clientRepository.save(client));

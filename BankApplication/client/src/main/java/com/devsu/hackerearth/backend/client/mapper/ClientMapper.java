@@ -11,6 +11,7 @@ public class ClientMapper {
 
     public Client toEntity(ClientDto dto) {
         Client client = new Client();
+        dto.setId(client.getId());
         client.setName(dto.getName());
         client.setDni(dto.getDni());
         client.setGender(dto.getGender());
@@ -18,6 +19,7 @@ public class ClientMapper {
         client.setAddress(dto.getAddress());
         client.setPhone(dto.getPhone());
         client.setPassword(dto.getPassword());
+        dto.setPhone(client.getPhone());
         client.setActive(dto.isActive());
         return client;
     }
@@ -42,7 +44,7 @@ public class ClientMapper {
         dto.setGender(client.getGender());
         dto.setAge(client.getAge());
         dto.setAddress(client.getAddress());
-             dto.setActive(client.isActive());
+        dto.setActive(client.isActive());
         return dto;
     }
 }

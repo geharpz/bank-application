@@ -29,7 +29,9 @@ public class AccountMapper {
 
     public AccountDto toDto(Account account) {
         AccountDto dto = new AccountDto();
+        dto.setId(account.getId());
         dto.setType(Enum.valueOf(AccountType.class, account.getType()));
+        dto.setNumber(account.getNumber());
         dto.setInitialAmount(account.getInitialAmount());
         dto.setCurrentBalance(account.getCurrentBalance());
         dto.setClientId(account.getClientId());
