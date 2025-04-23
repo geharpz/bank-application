@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <testsuites>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.devsu.hackerearth.backend.account.sampleTest" time="45.896" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.devsu.hackerearth.backend.account.sampleTest" time="46.207" tests="4" errors="0" skipped="0" failures="0">
   
   <properties>
     
@@ -32,7 +32,7 @@
     
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
     
-    <property name="sun.java.command" value="/home/project/Microservices/BankApplication/account/target/surefire/surefirebooter1829793715578303379.jar /home/project/Microservices/BankApplication/account/target/surefire 2025-04-22T02-32-01_584-jvmRun1 surefire10828081801542378885tmp surefire_01251375321067386109tmp"/>
+    <property name="sun.java.command" value="/home/project/Microservices/BankApplication/account/target/surefire/surefirebooter3172235595221954370.jar /home/project/Microservices/BankApplication/account/target/surefire 2025-04-23T13-04-58_068-jvmRun1 surefire9117150733047935302tmp surefire_013493468983927321029tmp"/>
     
     <property name="jdk.debug" value="release"/>
     
@@ -67,7 +67,7 @@
     
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     
-    <property name="surefire.real.class.path" value="/home/project/Microservices/BankApplication/account/target/surefire/surefirebooter1829793715578303379.jar"/>
+    <property name="surefire.real.class.path" value="/home/project/Microservices/BankApplication/account/target/surefire/surefirebooter3172235595221954370.jar"/>
     
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     
@@ -119,16 +119,16 @@
     
   </properties>
   
-  <testcase name="shouldCreateAccountSuccessfully" classname="com.devsu.hackerearth.backend.account.sampleTest" time="0.314"/>
+  <testcase name="shouldCreateAccountSuccessfully" classname="com.devsu.hackerearth.backend.account.sampleTest" time="0.266"/>
   
-  <testcase name="shouldCreateAccountWithCorrectData" classname="com.devsu.hackerearth.backend.account.sampleTest" time="0.008"/>
+  <testcase name="shouldCreateAccountWithCorrectData" classname="com.devsu.hackerearth.backend.account.sampleTest" time="0.009"/>
   
-  <testcase name="shouldDeactivateAccount" classname="com.devsu.hackerearth.backend.account.sampleTest" time="0.004"/>
+  <testcase name="shouldDeactivateAccount" classname="com.devsu.hackerearth.backend.account.sampleTest" time="0.005"/>
   
-  <testcase name="createAccountTest" classname="com.devsu.hackerearth.backend.account.sampleTest" time="0.018"/>
+  <testcase name="createAccountTest" classname="com.devsu.hackerearth.backend.account.sampleTest" time="0.019"/>
   
 </testsuite>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.devsu.hackerearth.backend.client.sampleTest" time="46.135" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.devsu.hackerearth.backend.client.sampleTest" time="45.827" tests="4" errors="0" skipped="0" failures="0">
   
   <properties>
     
@@ -160,7 +160,7 @@
     
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
     
-    <property name="sun.java.command" value="/home/project/Microservices/BankApplication/client/target/surefire/surefirebooter4411139440743030737.jar /home/project/Microservices/BankApplication/client/target/surefire 2025-04-22T02-32-51_952-jvmRun1 surefire1926970519493681244tmp surefire_015782919784023736067tmp"/>
+    <property name="sun.java.command" value="/home/project/Microservices/BankApplication/client/target/surefire/surefirebooter4117799368217630352.jar /home/project/Microservices/BankApplication/client/target/surefire 2025-04-23T13-05-49_069-jvmRun1 surefire11906804544493885042tmp surefire_03774068622650895908tmp"/>
     
     <property name="jdk.debug" value="release"/>
     
@@ -195,7 +195,7 @@
     
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     
-    <property name="surefire.real.class.path" value="/home/project/Microservices/BankApplication/client/target/surefire/surefirebooter4411139440743030737.jar"/>
+    <property name="surefire.real.class.path" value="/home/project/Microservices/BankApplication/client/target/surefire/surefirebooter4117799368217630352.jar"/>
     
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     
@@ -247,13 +247,13 @@
     
   </properties>
   
-  <testcase name="shouldCreateClientSuccessfully" classname="com.devsu.hackerearth.backend.client.sampleTest" time="0.358"/>
+  <testcase name="shouldCreateClientSuccessfully" classname="com.devsu.hackerearth.backend.client.sampleTest" time="0.392"/>
   
-  <testcase name="createClientTest" classname="com.devsu.hackerearth.backend.client.sampleTest" time="0.017"/>
+  <testcase name="createClientTest" classname="com.devsu.hackerearth.backend.client.sampleTest" time="0.023"/>
   
-  <testcase name="shouldCreateClientWithCorrectData" classname="com.devsu.hackerearth.backend.client.sampleTest" time="0.003"/>
+  <testcase name="shouldCreateClientWithCorrectData" classname="com.devsu.hackerearth.backend.client.sampleTest" time="0.004"/>
   
-  <testcase name="shouldDeactivateClient" classname="com.devsu.hackerearth.backend.client.sampleTest" time="0.003"/>
+  <testcase name="shouldDeactivateClient" classname="com.devsu.hackerearth.backend.client.sampleTest" time="0.004"/>
   
 </testsuite>
 </testsuites>

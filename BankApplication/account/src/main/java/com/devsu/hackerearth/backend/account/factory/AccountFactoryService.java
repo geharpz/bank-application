@@ -16,7 +16,7 @@ public class AccountFactoryService {
 
     private final AccountNumberGenerator accountNumberGenerator;
     private final AccountMapper accountMapper;
-    private final AccountRepository accountRepository; // usamos repositorio directamente para evitar ciclo
+    private final AccountRepository accountRepository;
 
     public Account prepareAccount(AccountDto dto) {
         Account account = accountMapper.toEntity(dto);
